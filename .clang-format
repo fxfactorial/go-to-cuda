@@ -1,0 +1,45 @@
+---
+Language:     Cpp
+Standard:     Cpp11
+BasedOnStyle: Google
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+BinPackParameters: true
+BraceWrapping:
+  AfterCaseLabel:        true
+  AfterClass:            true
+  AfterControlStatement: true
+  AfterEnum:             true
+  AfterFunction:         true
+  AfterNamespace:        true
+  AfterObjCDeclaration:  true
+  AfterStruct:           true
+  AfterUnion:            true
+  BeforeCatch:           true
+  BeforeElse:            true
+  SplitEmptyFunction:    false
+BreakBeforeBraces: Attach
+BreakBeforeTernaryOperators: false
+ColumnLimit:     100
+ConstructorInitializerIndentWidth: 2
+IncludeBlocks: Merge
+IncludeCategories:
+  - Regex:           '^".*'
+    Priority:        1
+  - Regex:           '^<boost.*'
+    Priority:        98
+  - Regex:           '^<.*\.(h|hpp)>'
+    Priority:        2
+  - Regex:           '^<.*'
+    Priority:        99
+  - Regex:           '.*'
+    Priority:        4
+IncludeIsMainRegex: '(Test)?$'
+IndentCaseLabels: false
+IndentPPDirectives: BeforeHash
+IndentWidth:     2
+MaxEmptyLinesToKeep: 2
+PenaltyBreakAssignment: 1
+PenaltyBreakComment: 50
+TabWidth:        2
